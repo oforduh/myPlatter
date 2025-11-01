@@ -1,0 +1,60 @@
+.addMarginOnHeaderNavOpen {
+  margin-left: 250px;
+  @media screen and (max-width: 48em) {
+    margin-left: unset;
+  }
+}
+.addMarginOnHeaderNavClose {
+  margin-left: 80px;
+  @media screen and (max-width: 48em) {
+    margin-left: unset;
+  }
+}
+
+.addWidthOnHeaderNavClose {
+  width: calc(100vw - 80px);
+  @media screen and (max-width: 48em) {
+    width: 100vw;
+  }
+}
+
+.addWidthOnHeaderNavOpen {
+  width: calc(100vw - 250px);
+  @media screen and (max-width: 48em) {
+    width: 100vw;
+  }
+}
+
+.app_layout_navbar {
+  min-width: 80px;
+  max-width: 80px;
+  transition: all 0.3s ease;
+  height: calc(100vh);
+  overflow: hidden;
+}
+
+.app_layout_navbar_open {
+  min-width: 250px;
+  max-width: 250px;
+  height: calc(100vh);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.app_layout_main {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 48em) {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+.app_layout_header {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 48em) {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}

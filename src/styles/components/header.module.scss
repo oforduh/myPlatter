@@ -1,0 +1,108 @@
+.headerWrapper {
+  background-color: var(--brand-bg);
+  width: 100%;
+}
+
+.header {
+  height: 80px;
+  margin: 0 auto;
+  padding: 0;
+}
+.navLink {
+  color: #4a4a4a;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #e41b17;
+  }
+}
+
+.helpButton {
+  background-color: var(--brand-red);
+  color: white;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #c23636;
+  }
+}
+
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification_count {
+  position: absolute;
+  top: 0;
+  transform: translate(80%, 80%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.pointStyling {
+  width: 10px;
+  height: 10px;
+  background: green;
+  border-radius: 50%;
+}
+
+.closeIconParentContainer {
+  background-color: #4318ff;
+}
+
+.ParentContainer {
+  background: red;
+}
+
+.mantineHeaderDrawer,
+.contentContainer {
+  background-color: #f5ddd1;
+}
+.mantineHeaderDrawer {
+  padding: 16px 5px;
+}
+
+.platterLogoStyling {
+  width: 120px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.link {
+  width: 100%;
+  padding: 0.25rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  margin: 0.25rem 0;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(4px);
+  }
+}
+
+.navBarFlexLink {
+  &[data-active="true"] {
+    background-color: rgba(255, 255, 255, 0.15);
+    // transform: translateX(4px);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.flexContainerScrollArea {
+  padding: 0;
+}
+.contentBody {
+  padding: 0;
+}

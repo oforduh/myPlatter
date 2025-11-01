@@ -1,0 +1,200 @@
+.reviewsSectionWrapper {
+  position: relative;
+}
+
+.reviewsTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  line-height: 1.2;
+  font-family: "Playfair Display", serif;
+
+  @media (max-width: 768px) {
+    font-size: 2.25rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.875rem;
+  }
+}
+
+.carouselWrapper {
+  position: relative;
+  padding: 0 100px;
+
+  @media (max-width: 968px) {
+    padding: 0 70px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 60px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 50px;
+  }
+}
+
+.carouselRoot {
+  margin: 0 auto;
+}
+
+.carouselViewport {
+  padding: 0;
+}
+
+.carouselControls {
+  position: static;
+}
+
+.carouselControl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--brand-red);
+  border: none;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+
+  &:hover {
+    background-color: rgba(80, 80, 80, 1);
+  }
+
+  &[data-inactive] {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  // Left control - positioned outside
+  &:first-of-type {
+    left: -80px;
+
+    @media (max-width: 968px) {
+      left: -65px;
+    }
+
+    @media (max-width: 768px) {
+      left: -60px;
+    }
+
+    @media (max-width: 480px) {
+      left: -50px;
+    }
+  }
+
+  // Right control - positioned outside
+  &:last-of-type {
+    right: -80px;
+
+    @media (max-width: 968px) {
+      right: -65px;
+    }
+
+    @media (max-width: 768px) {
+      right: -60px;
+    }
+
+    @media (max-width: 480px) {
+      right: -50px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media (max-width: 480px) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.reviewCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px 20px;
+    min-height: 260px;
+  }
+}
+
+.starContainer {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.star {
+  color: #ffc107;
+}
+
+.reviewText {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #333;
+  flex: 1;
+  margin: 12px 0;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
+}
+
+.reviewerName {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 2px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.reviewerRole {
+  font-size: 0.8125rem;
+  color: #666;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.reviewsLogo {
+  width: auto;
+  height: 60px;
+  object-fit: contain;
+
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+
+  @media (max-width: 480px) {
+    height: 50px;
+  }
+}

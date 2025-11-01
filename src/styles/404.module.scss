@@ -1,0 +1,13 @@
+// error boundary page styling
+.errorBoundaryImage {
+  width: 600px;
+  height: 600px;
+  @media (max-width: 62em) {
+    width: 600px;
+    height: 600px;
+  }
+  @media (max-width: 48em) {
+    width: 350px;
+    height: 350px;
+  }
+}

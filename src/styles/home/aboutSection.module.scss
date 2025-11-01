@@ -1,0 +1,86 @@
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.decorativeImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.contentContainer {
+  flex: 1;
+  max-width: 600px;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color-dark);
+  line-height: 1.2;
+  font-family: var(--font-playfair-display), serif;
+
+  @media (max-width: 768px) {
+    font-size: 2.25rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.875rem;
+  }
+}
+
+.aboutText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: right;
+  font-family: var(--font-dm-sans), sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}
+
+.ctaButton {
+  background-color: var(--brand-red);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 14px 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-end;
+
+  &:hover {
+    background-color: var(--brand-red);
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 12px 32px;
+    align-self: center;
+  }
+}
