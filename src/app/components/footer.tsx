@@ -7,7 +7,7 @@ import {
   Flex,
   Divider,
 } from "@mantine/core";
-import classes from "@/styles/components/Footer.module.scss";
+import classes from "@/styles/components/footer.module.scss";
 import platterFooterLogo from "@/assets/platterFooterLogo.png"; // Make sure this path is correct
 import {
   IconBrandFacebook,
