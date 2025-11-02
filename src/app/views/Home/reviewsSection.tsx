@@ -66,7 +66,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 };
 
 export default function ReviewsSection() {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
   return (
     <Box className={classes.reviewsSectionWrapper}>
       <Container size={"100%"} py={{ base: 60, md: 80 }} px={0}>
