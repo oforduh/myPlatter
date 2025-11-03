@@ -13,7 +13,7 @@ export default function ComingSoon() {
           Download the mobile app now.
         </Text>
         <Text className={classes.orderText}>
-          Order anything and track it in real time with the plattar app. fffff
+          Order anything and track it in real time with the plattar app.
         </Text>
       </Stack>
 

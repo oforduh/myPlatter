@@ -73,8 +73,7 @@ export default function Header() {
 
               <Menu.Dropdown
                 style={{
-                  backgroundColor: "var(--brand-bg)",
-                  border: "2px solid white",
+                  backgroundColor: "#fff",
                 }}
               >
                 <Menu.Item
