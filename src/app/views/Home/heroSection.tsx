@@ -1,4 +1,3 @@
-import { IconBell, IconSearch } from "@tabler/icons-react";
 import {
   Box,
   Button,
@@ -10,18 +9,25 @@ import {
   Image,
 } from "@mantine/core";
 import classes from "@/styles/home/heroSection.module.scss";
-import heroImage from "@/assets/heroImage.jpg";
+import heroImage from "@/assets/heroImage1.jpg";
 
 export default function HeroSection() {
   return (
-    <Container size={"100%"} mx={17.5} py={{ base: 50 }} px={0}>
+    <Container
+      size={"100%"}
+      mx={17.5}
+      pt={{ base: 50 }}
+      pb={{ base: 50, md: 20 }}
+      px={0}
+      // style={{ border: "2px solid red" }}
+    >
       <Flex
         direction={{ base: "column", md: "row" }}
         align={{ base: "center", md: "flex-start" }}
         justify="space-between"
         gap={{ base: 40, md: 0 }}
         pt={{ base: 20, md: 60 }}
-        pb={{ base: 20, md: 60 }}
+        pb={{ base: 20, md: 0 }}
       >
         {/* Hero Text Content */}
         <Stack w={{ base: "100%", md: "40%" }} mt={{ base: 40 }}>
@@ -62,6 +68,7 @@ export default function HeroSection() {
           px={{ base: 50 }}
           w={{ base: "100%", md: "60%" }}
           display={{ base: "none", md: "block" }}
+          // style={{ border: "2px solid red" }}
         >
           <Image
             src={heroImage.src}
