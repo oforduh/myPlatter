@@ -14,6 +14,7 @@ import {
   IconBrandInstagram,
   IconBrandTiktok,
   IconBrandX,
+  IconBrandYoutube,
 } from "@tabler/icons-react"; // Assuming tabler icons or react-icons are installed
 
 export default function Footer() {
@@ -49,6 +50,9 @@ export default function Footer() {
             </Anchor>
             <Anchor href="#">
               <IconBrandTiktok size={22} color="#fff" />
+            </Anchor>
+            <Anchor href="#">
+              <IconBrandYoutube size={22} color="#fff" />
             </Anchor>
           </Group>
         </Flex>

@@ -2,7 +2,7 @@ import { Box, Container, Flex, Text, Image } from "@mantine/core";
 import classes from "@/styles/home/featureSection.module.scss";
 import feature1 from "@/assets/feature1.jpg";
 import feature2 from "@/assets/feature2.jpg";
-import feature3 from "@/assets/feature3.jpg";
+import feature3 from "@/assets/feature3.png";
 
 const features = [
   {

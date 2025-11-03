@@ -16,6 +16,7 @@
   transition: color 0.2s ease;
 
   &:hover {
+    background-color: var(--brand-bg);
     color: #e41b17;
   }
 }
@@ -29,6 +30,16 @@
 
   &:hover {
     background-color: #c23636;
+  }
+}
+
+.menuItemLink {
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 14px;
+
+  &:hover {
+    color: #e41b17;
   }
 }
 

@@ -44,6 +44,7 @@ export default function HeroSection() {
             mt={20}
             styles={{
               root: {
+                cursor: "pointer",
                 backgroundColor: "#e60023",
                 "&:hover": {
                   backgroundColor: "#c23636",
@@ -51,7 +52,7 @@ export default function HeroSection() {
               },
             }}
           >
-            Become a Vendor Today
+            Get started
           </Button>
         </Stack>
 

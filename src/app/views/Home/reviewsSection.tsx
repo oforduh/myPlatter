@@ -1,11 +1,11 @@
 "use client";
 import { Container, Title, Box, Text, Stack, Image } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
-import { IconStar, IconStarFilled } from "@tabler/icons-react";
+import { IconStarFilled } from "@tabler/icons-react";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import classes from "@/styles/home/reviewsSection.module.scss";
-import platterLogo2 from "@/assets/platterLogo2.jpg";
+import platterLogo2 from "@/assets/platterLogo2.png";
 
 const reviews = [
   {

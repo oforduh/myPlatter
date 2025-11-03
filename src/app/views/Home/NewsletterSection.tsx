@@ -11,7 +11,7 @@ import {
   Group,
 } from "@mantine/core";
 import classes from "@/styles/home/newsletterSection.module.scss";
-import fastShippingImage from "@/assets/fast-shipping.jpg";
+import fastShippingImage from "@/assets/fast-shipping.png";
 
 export default function NewsletterSection() {
   return (

@@ -1,14 +1,18 @@
 "use client";
 
-import { IconChevronDown } from "@tabler/icons-react";
+import {
+  IconChevronDown,
+  IconPhone,
+  IconQuestionMark,
+} from "@tabler/icons-react";
 import {
   Box,
   Burger,
-  Button,
   Container,
   Flex,
   Group,
   Image,
+  Menu,
 } from "@mantine/core";
 import classes from "@/styles/components/header.module.scss";
 import { useDisclosure } from "@mantine/hooks";
@@ -55,24 +59,42 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            {/* Help Button */}
-            <Button
-              className={classes.helpButton}
-              rightSection={<IconChevronDown size={16} />}
-              visibleFrom="sm"
-              radius="md"
-              size="md"
-              styles={{
-                root: {
-                  backgroundColor: "#e60023",
-                  "&:hover": {
-                    backgroundColor: "#c23636",
-                  },
-                },
-              }}
-            >
-              Help
-            </Button>
+            {/* Help Dropdown */}
+            <Menu shadow="md" width={200} trigger="hover">
+              <Menu.Target>
+                <Link
+                  href="#"
+                  className={classes.navLink}
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  Help <IconChevronDown size={16} style={{ marginLeft: 5 }} />
+                </Link>
+              </Menu.Target>
+
+              <Menu.Dropdown
+                style={{
+                  backgroundColor: "var(--brand-bg)",
+                  border: "2px solid white",
+                }}
+              >
+                <Menu.Item
+                  component={Link}
+                  href="/contact-us"
+                  className={classes.menuItemLink}
+                  leftSection={<IconPhone size={16} />}
+                >
+                  Contact Us
+                </Menu.Item>
+                <Menu.Item
+                  component={Link}
+                  href="/faqs"
+                  className={classes.menuItemLink}
+                  leftSection={<IconQuestionMark size={16} />}
+                >
+                  FAQs
+                </Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
           </Group>
 
           <Burger
