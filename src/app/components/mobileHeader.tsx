@@ -148,7 +148,8 @@ const MobileHeader = ({ drawerOpened, closeDrawer }: MobileHeaderProps) => {
                   <Collapse in={linksOpened}>
                     <Box
                       style={{ border: "none", backgroundColor: "white" }}
-                      ml="lg"
+                      mx="md"
+                      w="auto"
                     >
                       {item.dropdownItems?.map((dropdownItem) => (
                         <UnstyledButton
