@@ -50,7 +50,7 @@ const MobileHeader = ({ drawerOpened, closeDrawer }: MobileHeaderProps) => {
     { icon: IconHome, title: "Home", href: "/" },
     { icon: IconInfoCircle, title: "About", href: "/about" },
     { icon: IconArticle, title: "Blog", href: "/blog" },
-    { icon: IconCalendarEvent, title: "Platter Fest", href: "/platter-fest" },
+    { icon: IconCalendarEvent, title: "Platter", href: "/platter" },
     {
       icon: IconHelpCircle,
       title: "Help",

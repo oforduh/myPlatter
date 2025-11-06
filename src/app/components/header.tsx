@@ -49,7 +49,7 @@ export default function Header() {
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
               { href: "/blog", label: "Blog" },
-              { href: "/plattar-fest", label: "Plattar Fest" },
+              { href: "/plattar-fest", label: "Plattar" },
             ].map((link) => (
               <Link
                 key={link.href}

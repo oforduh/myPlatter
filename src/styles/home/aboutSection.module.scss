@@ -20,11 +20,11 @@
 .contentContainer {
   flex: 1;
   max-width: 600px;
-  align-items: flex-end;
+  align-items: flex-start;
 
   @media (max-width: 768px) {
     max-width: 100%;
-    text-align: center;
+    // text-align: center;
     align-items: center;
   }
 }
@@ -49,12 +49,12 @@
   font-size: 1rem;
   line-height: 1.8;
   color: #333;
-  text-align: right;
+  text-align: left;
   font-family: var(--font-dm-sans), sans-serif;
 
   @media (max-width: 768px) {
     font-size: 0.875rem;
-    text-align: center;
+    // text-align: center;
   }
 }
 
@@ -67,7 +67,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  align-self: flex-end;
+  align-self: flex-start;
 
   &:hover {
     background-color: var(--brand-red);
